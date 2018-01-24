@@ -12,4 +12,4 @@ humidity = sensor.read_humidity()
 
 timestamp = calendar.timegm(time.gmtime())
 
-print '{{ timestamp: {3}, device: {4}, temp: {0:0.3f}, pressure: {1:0.2f}, humidity: {2:0.2f} }}'.format(degrees, hectopascals, humidity, timestamp, socket.gethostname())
+print '{{ timestamp: {3}, device: "{4}", temperature: {0:0.3f}, pressure: {1:0.2f}, humidity: {2:0.2f} }}'.format(degrees, hectopascals, humidity, timestamp, socket.gethostname())
